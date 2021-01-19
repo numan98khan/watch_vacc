@@ -1,0 +1,4 @@
+requests==2.24.0
+discord.py==1.5.1
+html2text==2020.1.16
+discord==1.0.1

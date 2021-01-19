@@ -1,0 +1,10 @@
+First Name: USMAN
+Last Name: AHMED
+Address: House # 447, Street # 76, Sector G-8/1, Islamabad
+Region: Sector G-8/1
+Province: Islamabad
+Zip Code: 44080
+Number: +923325341776
+
+Branch Code: 0681
+IBAN: PK32ABPA0010070340080010
