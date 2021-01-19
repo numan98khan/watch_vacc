@@ -15,10 +15,17 @@ from discord import Webhook, RequestsWebhookAdapter, File
 WEBHOOK_ID = '789550588991766529'
 WEBHOOK_TOKEN = 'wAI4hHXY2g7TOIaJWlEEEjqWqJ-sAE-_LN-dUlVNWHl35AEM2N2GqaQoemJ6tXTNNSqh'
 
+debug_id = '801236245815492619'
+debug_token = 'syX4rGvf8MCEXqG_6w1JqN0NzdqE6dI-voGggyFrTF8Ms2cVBjWT6fJNmRoae5XPRRje'
+
+# https://discord.com/api/webhooks/801236245815492619/syX4rGvf8MCEXqG_6w1JqN0NzdqE6dI-voGggyFrTF8Ms2cVBjWT6fJNmRoae5XPRRje
+
 WEBHOOK_URL = 'https://discord.com/api/webhooks/789550588991766529/wAI4hHXY2g7TOIaJWlEEEjqWqJ-sAE-_LN-dUlVNWHl35AEM2N2GqaQoemJ6tXTNNSqh'
 
 # Create webhook
 webhook = Webhook.partial(WEBHOOK_ID, WEBHOOK_TOKEN,adapter=RequestsWebhookAdapter())
+debug_hook = Webhook.partial(debug_id, debug_token,adapter=RequestsWebhookAdapter())
+
 
 WAIT = 1
 
@@ -83,7 +90,8 @@ while True:
     newHash = hashlib.sha224(response).hexdigest()
 
     if newHash == currentHash:
-        print('SAME!')
+        debug_hook.send('SAME!', username='Vaccine Watcher')
+        # print('SAME!')
         continue
 
     else:
