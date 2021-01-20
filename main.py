@@ -27,7 +27,7 @@ webhook = Webhook.partial(WEBHOOK_ID, WEBHOOK_TOKEN,adapter=RequestsWebhookAdapt
 debug_hook = Webhook.partial(debug_id, debug_token,adapter=RequestsWebhookAdapter())
 
 
-WAIT = 1
+WAIT = 60
 
 h = html2text.HTML2Text()
 h.ignore_links = True
