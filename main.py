@@ -76,7 +76,7 @@ def get_diff(currtext, newtext):
 
 # exit()
 
-
+webhook.send('This is a new watcher. Started on a more stable server', username='Vaccine Watcher')
 
 while True:
 
